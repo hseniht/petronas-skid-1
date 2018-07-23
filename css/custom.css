@@ -23,3 +23,26 @@
   box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
   transition: all .3s ease;
 }
+
+.progress.vertical {
+    position: relative;
+    width: 20px;
+    min-height: 240px;
+    float: left;
+    margin-right: 20px;
+    background: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border: none;
+}
+
+.circle {
+  /* position: relative; */
+  width: 70px;
+  height: 70px;
+  line-height: 69px;
+  text-align: center;
+  border: 2px solid #6c757d;
+  border-radius: 50%
+}
