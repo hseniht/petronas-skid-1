@@ -1,0 +1,25 @@
+/*CUSTOM CSS By TK*/
+
+
+/*Dashboard*/
+
+.card-shadow {
+  transition: all .2s ease-in;
+}
+
+.card-shadow:hover {
+  box-shadow: 0 14px 26px -12px rgba(101, 101, 101, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(101, 101, 101, 0.2);
+  transition: all .2s ease-out;
+
+}
+
+.card-shadow-2:hover {
+  box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.card-shadow-2{
+  box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
+  transition: all .3s ease;
+}
