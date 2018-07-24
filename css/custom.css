@@ -24,6 +24,10 @@
   transition: all .3s ease;
 }
 
+.card-border {
+  border: 2px solid rgba(0, 0, 0, 0.12);
+}
+
 .progress.vertical {
     position: relative;
     width: 20px;

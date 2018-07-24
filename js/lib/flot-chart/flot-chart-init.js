@@ -60,11 +60,11 @@
 			max: 100
 		},
 		xaxis: {
-			show: false
+			show: true
 		},
 		colors: [ "#007BFF" ],
 		grid: {
-			color: "transparent",
+			color: "black",
 			hoverable: true,
 			borderWidth: 0,
 			backgroundColor: 'transparent'

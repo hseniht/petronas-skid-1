@@ -21,7 +21,6 @@
     <link href="css/helper.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
-
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:** -->
@@ -286,11 +285,13 @@
             <!-- Bread crumb -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-primary">Dashboard</h3> </div>
+                    <h3 class="text-primary">TANK LIVE DATA</h3> </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Field : BOKOR</a></li>
-                        <li class="breadcrumb-item active">Platform</li>
+                        <li class="breadcrumb-item"><a href="tk-dashboard-2.html">Platform : BODP-B</a></li>
+                        <li class="breadcrumb-item"><a href="tk-dashboard-3.html">Overview</a></li>
+                        <li class="breadcrumb-item active">Live Data</li>
                     </ol>
                 </div>
             </div>
@@ -298,88 +299,79 @@
             <!-- Container fluid  -->
             <div class="container-fluid">
                 <!-- Start Page Content -->
-                <div class="row">Current Platform : &nbsp;<strong>BOKOR - SKID A123</strong></div>
 
+                <!-- Last Updated Date-->
+                <div class="d-flex justify-content-end"><strong>Last Updated :&nbsp;</strong>2018-06-21 03:00:00</div>
+
+                <div class="row">
+                  <div class="d-flex justify-content-start"><strong>Live Data:&nbsp;</strong>CHEMICAL SKID SCALE INHIBITOR</div>
+                </div>
+                <br>
                 <div class="card">
 
                   <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                      <h1 class="col-md-6">Choose Platform</h1>
-                      <div class="col-md-3 input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Search..">
-                        <div class="input-group-append">
-                          <button class="btn btn-outline-secondary" type="button"><i class="ti-search"></i></button>
-                        </div>
-                      </div>
+                      <h1>T-9111</h1>
                   </div>
 
                   <div class="row">
-                    <div class="col-md-3 col-xl-2">
-                      <a href="tk-dashboard-3.html">
-                        <div class="card bg-success p-20 card-shadow">
-                          <h2 class="color-white">BOPD-A</h2>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col-md-3 col-xl-2">
-                      <a href="tk-dashboard-3.html">
-                        <div class="card bg-danger p-20 card-shadow">
-                          <h2 class="color-white">BOPD-B</h2>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col-md-3 col-xl-2">
-                      <a href="tk-dashboard-3.html">
-                        <div class="card bg-success p-20 card-shadow">
-                          <h2 class="color-white">BOPD-C</h2>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col-md-3 col-xl-2">
-                      <a href="tk-dashboard-3.html">
-                        <div class="card bg-success p-20 card-shadow">
-                          <h2 class="color-white">BOK-A</h2>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col-md-3 col-xl-2">
-                      <a href="tk-dashboard-3.html">
-                        <div class="card bg-success p-20 card-shadow">
-                          <h2 class="color-white">BOP-A</h2>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col-md-3 col-xl-2">
-                      <a href="tk-dashboard-3.html">
-                        <div class="card bg-success p-20 card-shadow">
-                          <h2 class="color-white">BOP-A</h2>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col-md-3 col-xl-2">
-                      <a href="tk-dashboard-3.html">
-                        <div class="card bg-success p-20 card-shadow">
-                          <h2 class="color-white">Platform A</h2>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col-md-3 col-xl-2">
-                      <a href="tk-dashboard-3.html">
-                        <div class="card bg-success p-20 card-shadow">
-                          <h2 class="color-white">Platform B</h2>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col-md-3 col-xl-2">
-                      <a href="tk-dashboard-3.html">
-                        <div class="card bg-success p-20 card-shadow">
-                          <h2 class="color-white">Platform C</h2>
-                        </div>
-                      </a>
-                    </div>
 
-
+                  <div class="col-md-6 col-lg-4">
+                    <div class="card card-border">
+                      <div class="card-body">
+                        <div class="card-title">
+                            <h4>Real Chart</h4>
+                        </div>
+                        <!-- <div class="flot-container" style="height:auto">
+                            <div id="cpu-load" class="cpu-load"></div>
+                        </div> -->
+                      </div>
+                    </div>
                   </div>
+
+                    <div class="col-md-6 col-lg-4">
+                      <div class="card card-border">
+                        <div class="card-body">
+                          <h3><strong>Level Consumption</strong></h3>
+                          <h4 class="card-title">Line Chart with Area</h4>
+                          <div class="ct-area-ln-chart"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                      <div class="card card-border">
+                        <div class="card-body">
+                          <h3><strong>Flow Rate</strong></h3>
+                          <div class="row">
+                            <div class="col-md-5 col-4">
+                              <div class="progress progress-vertical-bottom ">
+                                <div class="progress-bar bg-danger" style="width: 76px;height:15%;" role="progressbar">
+                                  <span style="transform: rotate(180deg);">15%</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-7 col-8">
+                              <h4>CORROSION INHIBITOR STORAGE TANK</h4><br />
+                              <div class="text-center">
+                                <h3>12.90<small>&nbsp;% / hr</small></h3>
+                                <p>Consumption Rate.</p>
+                              </div>
+                              <a class="text-dark" href="tk-dashboard-4.html">
+                                <button type="button" class="btn btn-dark btn-outline m-b-10 m-l-5">Inspect <i class="fas fa-arrow-right"></i></button>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
                 </div>
+
+
+                </div>
+
+
 
                 <!-- End PAge Content -->
             </div>
@@ -408,6 +400,18 @@
     <script src="js/lib/datamap/topojson.js"></script>
     <!-- <script src="js/lib/datamap/datamaps.world.min.js"></script> -->
     <!-- <script src="js/lib/datamap/datamap-init.js"></script> -->
+
+    <!--  flot-chart js -->
+    <script src="js/lib/flot-chart/excanvas.min.js"></script>
+    <script src="js/lib/flot-chart/jquery.flot.js"></script>
+    <script src="js/lib/flot-chart/jquery.flot.pie.js"></script>
+    <script src="js/lib/flot-chart/jquery.flot.time.js"></script>
+    <script src="js/lib/flot-chart/jquery.flot.stack.js"></script>
+    <script src="js/lib/flot-chart/jquery.flot.resize.js"></script>
+    <script src="js/lib/flot-chart/jquery.flot.crosshair.js"></script>
+    <script src="js/lib/flot-chart/curvedLines.js"></script>
+    <script src="js/lib/flot-chart/flot-tooltip/jquery.flot.tooltip.min.js"></script>
+    <script src="js/lib/flot-chart/flot-chart-init.js"></script>
 
     <script src="js/lib/weather/jquery.simpleWeather.min.js"></script>
     <script src="js/lib/weather/weather-init.js"></script>
