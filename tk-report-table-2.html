@@ -13,7 +13,7 @@
     <title>Petronas Admin Dashboard</title>
 
     <link href="css/lib/chartist/chartist.min.css" rel="stylesheet">
-	<link href="css/lib/owl.carousel.min.css" rel="stylesheet" />
+	  <link href="css/lib/owl.carousel.min.css" rel="stylesheet" />
     <link href="css/lib/owl.theme.default.min.css" rel="stylesheet" />
     <!-- Bootstrap Core CSS -->
     <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
@@ -21,6 +21,9 @@
     <link href="css/helper.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+    <!-- Air Datepicker-->
+    <link href="css/lib/airdatepicker/datepicker.min.css" rel="stylesheet" type="text/css">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:** -->
@@ -345,8 +348,19 @@
                       </select>
                     </div>
 
-                    <button type="button" class="btn btn-info m-b-10">Get</button>
+                  </div>
 
+                  <div class="row">
+                    <div class=" col-5 input-group mb-3" style="width: fit-content;">
+                      <input type='text' class='datepicker-here custom-select'
+                        data-range="true"
+                        data-multiple-dates-separator=" - "
+                        data-timepicker="true"
+                        data-time-format="hh:ii"
+                        data-language='en' placeholder="start date - end date" style="width:fit-content" />
+                    </div>
+
+                    <button type="button" class="btn btn-info m-b-10">Get</button>
                   </div>
 
                 </div>
@@ -397,6 +411,13 @@
     <script src="js/lib/weather/weather-init.js"></script>
     <script src="js/lib/owl-carousel/owl.carousel.min.js"></script>
     <script src="js/lib/owl-carousel/owl.carousel-init.js"></script>
+
+    <!-- Air Datepicker-->
+    <script src="js/lib/airdatepicker/datepicker.min.js"></script>
+    <!-- Air Datepicker English language -->
+    <script src="js/lib/airdatepicker/i18n/datepicker.en.js"></script>
+
+
 
 
     <!-- <script src="js/lib/chartist/chartist.min.js"></script>
