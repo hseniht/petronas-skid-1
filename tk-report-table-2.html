@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
-    <title>Petronas Admin Dashboard</title>
+    <title>Report - {BAKOR BOPD-B}</title>
 
     <link href="css/lib/chartist/chartist.min.css" rel="stylesheet">
 	  <link href="css/lib/owl.carousel.min.css" rel="stylesheet" />
@@ -311,6 +311,7 @@
 
                 </div>
                 <br>
+                <!-- Filters -->
                 <div class="card">
 
                   <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
@@ -360,12 +361,109 @@
                         data-language='en' placeholder="start date - end date" style="width:fit-content" />
                     </div>
 
-                    <button type="button" class="btn btn-info m-b-10">Get</button>
+                    <button id="getRecord" type="button" class="btn btn-info m-b-10">Get</button>
                   </div>
 
                 </div>
 
+                <!-- Sample Table  -->
+                <div id="sample-report-table-1" class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Data Export of BOPD-B</h4>
+                                <h6 class="card-subtitle">Export data to Copy, CSV, Excel, PDF & Print</h6>
+                                <div class="table-responsive m-t-40">
 
+                                    <table id="example23" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
+                                        <thead>
+                                            <tr>
+                                                <th class="w-15">Platform</th>
+                                                <th class="w-15">Skid</th>
+                                                <th class="w-30">Date</th>
+                                                <th class="w-10">Tank Level (L)</th>
+                                                <th class="w-10">Flowrate (LPH)</th>
+                                                <th class="w-10">Design Pressure (barg)</th>
+                                            </tr>
+                                        </thead>
+                                        <!-- <tfoot>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Position</th>
+                                                <th>Office</th>
+                                                <th>Age</th>
+                                                <th>Start date</th>
+                                                <th>Salary</th>
+                                            </tr>
+                                        </tfoot> -->
+                                        <tbody>
+                                          <tr>
+                                            <td>BODP-B</td>
+                                            <td>Biocide</td>
+                                            <td>07/12/2018 22:00</td>
+                                            <td>8000</td>
+                                            <td>262.6</td>
+                                            <td>42.2</td>
+                                          </tr>
+                                          <tr>
+                                            <td>BODP-B</td>
+                                            <td>Biocide</td>
+                                            <td>07/12/2018 23:00</td>
+                                            <td>7900</td>
+                                            <td>262.6</td>
+                                            <td>43.2</td>
+                                          </tr>
+                                          <tr>
+                                            <td>BODP-B</td>
+                                            <td>Biocide</td>
+                                            <td>07/13/2018 00:00</td>
+                                            <td>7790</td>
+                                            <td>262.6</td>
+                                            <td>42.4</td>
+                                          </tr>
+                                          <tr>
+                                            <td>BODP-B</td>
+                                            <td>Biocide</td>
+                                            <td>07/13/2018 01:00</td>
+                                            <td>7710</td>
+                                            <td>263.0</td>
+                                            <td>42.2</td>
+                                          </tr>
+                                          <tr>
+                                            <td>BODP-B</td>
+                                            <td>Biocide</td>
+                                            <td>07/13/2018 02:00</td>
+                                            <td>7590</td>
+                                            <td>282.0</td>
+                                            <td>45.4</td>
+                                          </tr>
+                                          <tr>
+                                            <td>BODP-B</td>
+                                            <td>Biocide</td>
+                                            <td>07/13/2018 03:00</td>
+                                            <td>6900</td>
+                                            <td>273.0</td>
+                                            <td>46.4</td>
+                                          </tr>
+                                          <tr>
+                                            <td>BODP-B</td>
+                                            <td>Biocide</td>
+                                            <td>07/12/2018 04:00</td>
+                                            <td>6500</td>
+                                            <td>263.0</td>
+                                            <td>47.4</td>
+                                          </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- end of Sample Table-->
 
                 <!-- End PAge Content -->
             </div>
@@ -425,6 +523,18 @@
     <script src="js/lib/chartist/chartist-init.js"></script> -->
     <!--Custom JavaScript -->
     <script src="js/custom.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <!-- Datatables-->
+    <script src="js/lib/datatables/datatables.min.js"></script>
+    <script src="js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
+    <script src="js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js"></script>
+    <script src="js/lib/datatables/cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+    <script src="js/lib/datatables/cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+    <script src="js/lib/datatables/cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+    <script src="js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
+    <script src="js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
+    <script src="js/lib/datatables/datatables-init.js"></script>
 
 </body>
 
