@@ -29,7 +29,8 @@ if (typeof jQuery === 'undefined') {
             inputClass: 'form-control input-sm',
             toolbarClass: 'btn-toolbar',
             groupClass: 'btn-group btn-group-sm',
-            dangerClass: 'danger',
+            dangerClass: 'bg-success',
+            successClass: 'bg-success',
             warningClass: 'warning',
             mutedClass: 'text-muted',
             eventType: 'click',
@@ -399,7 +400,12 @@ if (typeof jQuery === 'undefined') {
                     $lastDeletedRow.find('.tabledit-toolbar button').attr('disabled', false);
                     $lastDeletedRow.find('.tabledit-toolbar .tabledit-restore-button').hide();
                 } else if (action === settings.buttons.edit.action) {
-                    $lastEditedRow.addClass(settings.dangerClass);
+                    $lastEditedRow.addClass(settings.successClass);
+                    setTimeout(function() {
+                        $lastEditedRow.removeClass(settings.successClass);
+                        //$lastEditedRow.removeClass(settings.warningClass);
+                        $table.find('tr.' + settings.warningClass).removeClass(settings.warningClass);
+                    }, 700);
                 }
 
                 settings.onFail(jqXHR, textStatus, errorThrown);

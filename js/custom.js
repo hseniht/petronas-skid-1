@@ -10,17 +10,11 @@ $("#getRecord").click(function(){
 
 
 
+
 $('#example23').Tabledit({
     deleteButton: false,
     columns: {
-        identifier: [0, 'id'],
+        identifier: [0, ''],
         editable: [[1, 'Tank']]
-    }
-});
-$('#example-2').Tabledit({
-deleteButton: false,
-    columns: {
-        identifier: [0, 'id'],
-        editable: [[2, 'Last']]
     }
 });
