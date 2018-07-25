@@ -301,8 +301,6 @@
             <!-- End Bread crumb -->
             <!-- Container fluid  -->
             <div class="container-fluid">
-                <!-- Start Page Content -->
-
                 <!-- Last Updated Date-->
                 <div class="d-flex justify-content-end"><strong>Last Updated :&nbsp;</strong>2018-06-21 03:00:00</div>
 
@@ -310,76 +308,84 @@
                   <div class="d-flex justify-content-start"><strong>Data Table:&nbsp;</strong>CHEMICAL SKID SCALE INHIBITOR</div>
 
                 </div>
+
                 <br>
-                <!-- Filters -->
+                <!-- Start of Form Card -->
                 <div class="card">
 
                   <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                       <h1>Report</h1>
                   </div>
 
-                  <div class="row">
-                    <div class="col input-group mb-3 float-right" style="width: fit-content;">
-                      <select class="custom-select" id="inputGroupSelect01">
-                        <option selected>Choose Platform</option>
-                        <option value="default">BOKOR</option>
-                        <option value="highest">SIWA</option>
-                        <option value="lowest">TUKAU</option>
-                        <option value="ratings">BAKAU</option>
-                      </select>
+                  <form>
+                    <div class="form-row">
+                      <div class="form-group col">
+                        <label for="inputState">Platform</label>
+                        <!-- <select id="inputState" class="form-control">
+                          <option selected>Choose...</option>
+                          <option>...</option>
+                        </select> -->
+                        <select class="custom-select" id="inputGroupSelect01">
+                          <option selected>Choose Platform</option>
+                          <option value="">BOKOR</option>
+                          <option value="">SIWA</option>
+                          <option value="">TUKAU</option>
+                          <option value="">BAKAU</option>
+                        </select>
+                      </div>
+                      <div class="form-group col">
+                        <label for="inputState">Skid</label>
+                        <select class="custom-select" id="inputGroupSelect02">
+                          <option selected>Select Skid</option>
+                          <option value="">BOPD-A</option>
+                          <option value="">BOPD-B</option>
+                          <option value="">BADP-C</option>
+                          <option value="">BADP-C</option>
+                        </select>
+                      </div>
+                      <div class="form-group col">
+                        <label for="inputState">Tank</label>
+                        <select class="custom-select" id="inputGroupSelect03">
+                          <option selected>Choose Tank</option>
+                          <option value="default">BIOCIDE</option>
+                          <option value="highest">CORROSION INHIBITOR</option>
+                          <option value="lowest">SCALE INHIBITOR</option>
+                        </select>
+                      </div>
                     </div>
 
-                    <div class="col input-group mb-3 float-right" style="width: fit-content;">
-                      <select class="custom-select" id="inputGroupSelect01">
-                        <option selected>Select Skid</option>
-                        <option value="default">BOPD-A</option>
-                        <option value="highest">BOPD-B</option>
-                        <option value="lowest">BADP-C</option>
-                        <option value="ratings">BADP-C</option>
-                      </select>
-                    </div>
-
-                    <div class=" col input-group mb-3 float-right" style="width: fit-content;">
-                      <select class="custom-select" id="inputGroupSelect01">
-                        <option selected>Choose Tank</option>
-                        <option value="default">BIOCIDE</option>
-                        <option value="highest">CORROSION INHIBITOR</option>
-                        <option value="lowest">SCALE INHIBITOR</option>
-
-                      </select>
-                    </div>
-
-                  </div>
-
-                  <div class="row">
-                    <div class=" col-5 input-group mb-3" style="width: fit-content;">
-                      <input type='text' class='datepicker-here custom-select'
+                    <div class="form-row">
+                      <div class=" col-5 input-group mb-3" style="width: fit-content;">
+                        <input type='text' class='datepicker-here custom-select'
                         data-range="true"
                         data-multiple-dates-separator=" - "
                         data-timepicker="true"
                         data-time-format="hh:ii"
                         data-language='en' placeholder="start date - end date" style="width:fit-content" />
+                      </div>
+                      <button type="button" id="getRecord" class="btn btn-info m-b-10">Get</button>
+                      <!-- <button type="submit" id="getRecord" class="btn btn-info m-b-10">Get in</button> -->
+                      <!-- <button id="getRecord" type="button" class="btn btn-info m-b-10">Get</button> -->
                     </div>
-
-                    <button id="getRecord" type="button" class="btn btn-info m-b-10">Get</button>
-                  </div>
+                  </form>
 
                 </div>
+                <!-- End of Form Card -->
 
-                <!-- Sample Table  -->
+                <!-- Start Sample Table  -->
                 <div id="sample-report-table-1" class="row">
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Data Export of BOPD-B</h4>
+                                <h4 class="card-title">Data Export of BOKOR - BOPD-B</h4>
                                 <h6 class="card-subtitle">Export data to Copy, CSV, Excel, PDF & Print</h6>
                                 <div class="table-responsive m-t-40">
 
                                     <table id="example23" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
                                         <thead>
                                             <tr>
-                                                <th class="w-15">Platform</th>
                                                 <th class="w-15">Skid</th>
+                                                <th class="w-15">Tank</th>
                                                 <th class="w-30">Date</th>
                                                 <th class="w-10">Tank Level (L)</th>
                                                 <th class="w-10">Flowrate (LPH)</th>
@@ -463,9 +469,8 @@
 
                     </div>
                 </div>
-                <!-- end of Sample Table-->
+                <!-- End of Sample Table-->
 
-                <!-- End PAge Content -->
             </div>
             <!-- End Container fluid  -->
             <!-- footer -->
