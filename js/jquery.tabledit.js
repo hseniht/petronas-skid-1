@@ -94,7 +94,7 @@ if (typeof jQuery === 'undefined') {
                     }
 
                     var $td = $table.find('tbody td:nth-child(' + (parseInt(settings.columns.identifier[0]) + 1) + ')');
-
+                    
                     $td.each(function() {
                         // Create hidden input with row identifier.
                         var span = '<span class="tabledit-span tabledit-identifier">' + $(this).text() + '</span>';

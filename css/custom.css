@@ -50,3 +50,13 @@
   border: 2px solid #6c757d;
   border-radius: 50%
 }
+
+
+/* ALARM TABLE */
+.tabledit-toolbar.btn-toolbar {
+  display: inline-block;
+}
+
+#example23.table > thead > tr > th {
+  line-height: 16px;
+}
