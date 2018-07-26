@@ -82,3 +82,13 @@
 .dt-button.buttons-copy.buttons-html5 {
   display: none;
 }
+
+div.smoothie-chart-tooltip {
+  background: #444;
+  padding: 1em;
+  margin-top: 20px;
+  font-family: consolas;
+  color: white;
+  font-size: 10px;
+  pointer-events: none;
+}

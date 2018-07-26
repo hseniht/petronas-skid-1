@@ -53,7 +53,7 @@
 
 	var plot = $.plot( "#cpu-load", [ getRandomData() ], {
 		series: {
-			shadowSize: 0 // Drawing is faster without shadows
+			shadowSize: 10 // Drawing is faster without shadows
 		},
 		yaxis: {
 			min: 0,

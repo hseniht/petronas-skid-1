@@ -13,7 +13,7 @@
     <title>Petronas Admin Dashboard</title>
 
     <link href="css/lib/chartist/chartist.min.css" rel="stylesheet">
-	<link href="css/lib/owl.carousel.min.css" rel="stylesheet" />
+	  <link href="css/lib/owl.carousel.min.css" rel="stylesheet" />
     <link href="css/lib/owl.theme.default.min.css" rel="stylesheet" />
     <!-- Bootstrap Core CSS -->
     <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
@@ -308,68 +308,27 @@
                   <div class="d-flex justify-content-start"><strong>Live Data:&nbsp;</strong>CHEMICAL SKID SCALE INHIBITOR</div>
                 </div>
                 <br>
-                <div class="card">
 
-                  <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                      <h1>T-9111</h1>
-                  </div>
+                <!-- test smoothie-->
+                <p>The <em>hello world</em> of <a href="../">Smoothie Charts</a>. View source.</p>
 
-                  <div class="row">
+                <canvas id="chart" width="400" height="100"></canvas>
+                <script  type="text/javascript" src="js/lib/smoothie-js/smoothie.js"></script>
+                <script>
 
-                        <div class="col-md-6 col-lg-4">
-                          <div class="card card-border">
-                            <div class="card-body">
-                              <div class="card-title">
-                                  <h4>Real Chart</h4>
-                              </div>
-                              <!-- <div class="flot-container" style="height:auto">
-                                  <div id="cpu-load" class="cpu-load"></div>
-                              </div> -->
-                            </div>
-                          </div>
-                        </div>
+                  // Randomly add a data point every 500ms
+                  var random = new TimeSeries();
+                  setInterval(function() {
+                    random.append(new Date().getTime(), Math.random() * 10000);
+                  }, 500);
 
-                        <div class="col-md-6 col-lg-4">
-                          <div class="card card-border">
-                            <div class="card-body">
-                              <h3><strong>Level Consumption</strong></h3>
-                              <h4 class="card-title">Line Chart with Area</h4>
-                              <!-- <div class="ct-area-ln-chart"></div> -->
-                              <canvas id="mycanvas" width="300" height="200"></canvas>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="col-md-6 col-lg-4">
-                          <div class="card card-border">
-                            <div class="card-body">
-                              <h3><strong>Flow Rate</strong></h3>
-                              <canvas id="chart" width="400" height="100"></canvas>
-                              <script  type="text/javascript" src="js/lib/smoothie-js/smoothie.js"></script>
-  <script type="text/javascript">
-
-    // Randomly add a data point every 500ms
-    var random = new TimeSeries();
-    setInterval(function() {
-      random.append(new Date().getTime(), Math.random() * 10000);
-    }, 500);
-
-    function createTimeline() {
-      var chart = new SmoothieChart();
-      chart.addTimeSeries(random, { strokeStyle: 'rgba(0, 255, 0, 1)', fillStyle: 'rgba(0, 255, 0, 0.2)', lineWidth: 4 });
-      chart.streamTo(document.getElementById("chart"), 500);
-    }
-  </script>
-
-                            </div>
-                          </div>
-                        </div>
-
-
-                  </div>
-
-                </div>
-
+                  function createTimeline() {
+                    var chart = new SmoothieChart();
+                    chart.addTimeSeries(random, { strokeStyle:'rgb(255, 0, 255)', fillStyle:'rgba(255, 0, 255, 0.3)', lineWidth:3});
+                    chart.streamTo(document.getElementById("chart"), 500);
+                  }
+                </script>
+                <!-- end of test smoothie-->
 
 
                 <!-- End PAge Content -->
