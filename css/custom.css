@@ -70,3 +70,15 @@
 #example23.table > thead > tr > th {
   line-height: 16px;
 }
+
+#example23 thead tr th:last-child {
+    text-align: left;
+}
+
+#example23 tbody tr td:last-child {
+    text-align: left;
+}
+/*hide compy button*/
+.dt-button.buttons-copy.buttons-html5 {
+  display: none;
+}

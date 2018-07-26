@@ -258,7 +258,7 @@
                     <ul id="sidebarnav">
                         <li class="nav-devider"></li>
                         <li class="nav-label">Home</li>
-                        <li> <a href="#" aria-expanded="false"><i class="fa fa-tachometer-alt"></i><span class="hide-menu">Dashboard</span></a>
+                        <li> <a href="index.html" aria-expanded="false"><i class="fa fa-tachometer-alt"></i><span class="hide-menu">Dashboard</span></a>
                             <!-- <ul aria-expanded="false" class="collapse">
                                 <li><a href="tk-platform-2.html">Change Platform</a></li>
                                 <li><a href="index1.html">Analytics </a></li>
@@ -268,7 +268,8 @@
                         <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-bell"></i><span class="hide-menu">Alarms</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="tk-alarm-live-1.html">Live Alarm</a></li>
-                                <li><a href="chart-chartjs.html">Historical Alarm</a></li>
+                                <li><a href="tk-alarm-live-2.html">Historical Alarm</a></li>
+                                <li><a href="chart-chartjs.html">Charts</a></li>
                             </ul>
                         </li>
 
@@ -319,7 +320,7 @@
                 <div class="card">
 
                   <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                      <h1>Report</h1>
+                      <h1>Alarm History</h1>
                   </div>
 
                   <form>
@@ -386,7 +387,7 @@
                                 <h6 class="card-subtitle">Export data to Copy, CSV, Excel, PDF & Print</h6>
                                 <div class="table-responsive m-t-40">
 
-                                    <table id="example23" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
+                                    <table id="example23" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%" style="font-size:small">
                                         <thead>
                                             <tr>
                                                 <th class="w-10">No.</th>
@@ -484,13 +485,13 @@
     <!-- End Wrapper -->
 
     <script>
-    $('#example23').Tabledit({
-        deleteButton: false,
-        columns: {
-            identifier: [0, ''],
-            editable: [[8, 'Remarks']]
-        }
-    });
+    // $('#example23').Tabledit({
+    //     deleteButton: false,
+    //     columns: {
+    //         identifier: [0, ''],
+    //         editable: [[8, 'Remarks']]
+    //     }
+    // });
     </script>
     <!-- All Jquery -->
     <script src="js/lib/jquery/jquery.min.js"></script>
