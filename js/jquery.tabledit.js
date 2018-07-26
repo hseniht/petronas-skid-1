@@ -94,7 +94,7 @@ if (typeof jQuery === 'undefined') {
                     }
 
                     var $td = $table.find('tbody td:nth-child(' + (parseInt(settings.columns.identifier[0]) + 1) + ')');
-                    
+
                     $td.each(function() {
                         // Create hidden input with row identifier.
                         var span = '<span class="tabledit-span tabledit-identifier">' + $(this).text() + '</span>';
@@ -401,11 +401,12 @@ if (typeof jQuery === 'undefined') {
                     $lastDeletedRow.find('.tabledit-toolbar .tabledit-restore-button').hide();
                 } else if (action === settings.buttons.edit.action) {
                     $lastEditedRow.addClass(settings.successClass);
-                    setTimeout(function() {
-                        $lastEditedRow.removeClass(settings.successClass);
-                        //$lastEditedRow.removeClass(settings.warningClass);
-                        $table.find('tr.' + settings.warningClass).removeClass(settings.warningClass);
-                    }, 700);
+                    //timout for color 
+                    //setTimeout(function() {
+                    //     $lastEditedRow.removeClass(settings.successClass);
+                    //     //$lastEditedRow.removeClass(settings.warningClass);
+                    //     $table.find('tr.' + settings.warningClass).removeClass(settings.warningClass);
+                    // }, 700);
                 }
 
                 settings.onFail(jqXHR, textStatus, errorThrown);

@@ -53,6 +53,16 @@
 
 
 /* ALARM TABLE */
+.bg-success {
+  background-color: #26dad2 !important;
+  transition: All 0.7s
+}
+.bg-success > td {
+  color:white;
+}
+.bg-danger > td {
+  color:white;
+}
 .tabledit-toolbar.btn-toolbar {
   display: inline-block;
 }
