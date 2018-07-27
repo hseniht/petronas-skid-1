@@ -315,7 +315,6 @@
                   </div>
 
                   <div class="row">
-
                         <div class="col-md-6 col-lg-4">
                           <div class="card card-border">
                             <div class="card-body">
@@ -335,7 +334,7 @@
                               <h3><strong>Level Consumption</strong></h3>
                               <h4 class="card-title">Line Chart with Area</h4>
                               <!-- <div class="ct-area-ln-chart"></div> -->
-                              <canvas id="mycanvas" width="300" height="200"></canvas>
+                              <canvas class="w-100" id="chart" width="200" height="auto"></canvas>
                             </div>
                           </div>
                         </div>
@@ -344,28 +343,18 @@
                           <div class="card card-border">
                             <div class="card-body">
                               <h3><strong>Flow Rate</strong></h3>
-                              <canvas id="chart" width="400" height="100"></canvas>
-                              <script  type="text/javascript" src="js/lib/smoothie-js/smoothie.js"></script>
-  <script type="text/javascript">
-
-    // Randomly add a data point every 500ms
-    var random = new TimeSeries();
-    setInterval(function() {
-      random.append(new Date().getTime(), Math.random() * 10000);
-    }, 500);
-
-    function createTimeline() {
-      var chart = new SmoothieChart();
-      chart.addTimeSeries(random, { strokeStyle: 'rgba(0, 255, 0, 1)', fillStyle: 'rgba(0, 255, 0, 0.2)', lineWidth: 4 });
-      chart.streamTo(document.getElementById("chart"), 500);
-    }
-  </script>
+                              <canvas class="w-100" id="chart-2" width="200" height="auto"></canvas>
 
                             </div>
                           </div>
                         </div>
+                  </div>
 
-
+                  <div class="row pt-4">
+                     <div class="col-12 text-center">
+                       <h4>More comparison and history</h4>
+                       <a href="tk-dashboard-4-3.html" class="btn btn-primary btn-lg m-b-10 m-l-5">View Logs</a>
+                     </div>
                   </div>
 
                 </div>
@@ -421,9 +410,11 @@
     <!-- <script src="js/lib/chartist/chartist.min.js"></script>
     <script src="js/lib/chartist/chartist-plugin-tooltip.min.js"></script>
     <script src="js/lib/chartist/chartist-init.js"></script> -->
-    <!--Custom JavaScript -->
+    <!--Smoothie live chart -->
     <script  type="text/javascript" src="js/lib/smoothie-js/smoothie.js"></script>
+    <!--Custom JavaScript -->
     <script src="js/custom.min.js"></script>
+    <script src="js/custom.js"></script>
 
 </body>
 
