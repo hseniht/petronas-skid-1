@@ -14,38 +14,7 @@ $("#getChartLogs").click(function(){
 });
 
 
-//Smoothie Charts
-
-//live-chart-1
-// Randomly add a data point every 500ms
-      var random = new TimeSeries();
-      setInterval(function() {
-        random.append(new Date().getTime(), Math.random() * 10000);
-      }, 500);
-
-      function createTimeline() {
-        var chart = new SmoothieChart();
-        chart.addTimeSeries(random, { strokeStyle:'rgb(255, 0, 255)', fillStyle:'rgba(255, 0, 255, 0.3)', lineWidth:3});
-        chart.streamTo(document.getElementById("chart"), 500);
-      }
-
-
 //live-chart-2
-var random = new TimeSeries();
-setInterval(function() {
-  random.append(new Date().getTime(), Math.random() * 10000);
-}, 500);
-
-function createTimeline() {
-  var chart2 = new SmoothieChart();
-  chart2.addTimeSeries(random, { strokeStyle:'rgb(255, 0, 255)', fillStyle:'rgba(255, 0, 255, 0.3)', lineWidth:3});
-  chart2.streamTo(document.getElementById("chart-2"), 500);
-}
-
-
-//live-chart-2
-
-
 
 // START OF ECHART
 
@@ -265,3 +234,5 @@ if (option && typeof option === "object") {
 
 
   });
+
+  //end of ehcart
