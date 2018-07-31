@@ -1,5 +1,19 @@
 /*CUSTOM CSS By TK*/
 
+/*========== Start of General ===========*/
+
+li.breadcrumb-item a {
+
+  text-decoration: underline !important;
+}
+li.breadcrumb-item a:hover {
+  color: blue;
+  text-decoration: underline !important;
+}
+
+
+/*========== End of General ===========*/
+
 
 /*Dashboard*/
 
