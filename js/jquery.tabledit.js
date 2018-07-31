@@ -31,7 +31,7 @@ if (typeof jQuery === 'undefined') {
             groupClass: 'btn-group btn-group-sm',
             dangerClass: 'bg-success',
             successClass: 'bg-success',
-            warningClass: 'warning',
+            warningClass: 'bg-warning',
             mutedClass: 'text-muted',
             eventType: 'click',
             rowIdentifier: 'id',
@@ -400,8 +400,9 @@ if (typeof jQuery === 'undefined') {
                     $lastDeletedRow.find('.tabledit-toolbar button').attr('disabled', false);
                     $lastDeletedRow.find('.tabledit-toolbar .tabledit-restore-button').hide();
                 } else if (action === settings.buttons.edit.action) {
-                    $lastEditedRow.addClass(settings.successClass);
-                    //timout for color 
+                    $lastEditedRow.addClass(settings.warningClass);
+                    //tks
+                    //timout for color
                     //setTimeout(function() {
                     //     $lastEditedRow.removeClass(settings.successClass);
                     //     //$lastEditedRow.removeClass(settings.warningClass);
@@ -610,6 +611,11 @@ if (typeof jQuery === 'undefined') {
                     break;
             }
         });
+
+        //tk's custom
+
+
+
 
         return this;
     };

@@ -231,8 +231,14 @@ if (option && typeof option === "object") {
 
 //end of echart-1
 
+});
+//end of ehcart
+
+"tabledit-save-button btn btn-sm btn-success"
 
 
-  });
+$(".tabledit-save-button.btn.btn-sm.btn-success").click(function(){
 
-  //end of ehcart
+    $("#alarm-status").html("Acknowledged")
+    $("#last-acknowledged-user").html("User X")
+});

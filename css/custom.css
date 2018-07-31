@@ -67,6 +67,13 @@ li.breadcrumb-item a:hover {
 
 
 /* ALARM TABLE */
+.bg-warning {
+  background-color: #ffb64d !important;
+  transition: All 0.7s
+}
+.bg-warning > td {
+  color:black !important;
+}
 .bg-success {
   background-color: #26dad2 !important;
   transition: All 0.7s
