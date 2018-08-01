@@ -8,7 +8,7 @@ function drawChart() {
 
   var data = google.visualization.arrayToDataTable([
     ['Label', 'Value'],
-    ['Memory', 80]
+    ['Pressure', 80]
     // ['CPU', 55],
     // ['Network', 68]
   ]);

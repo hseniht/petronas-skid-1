@@ -28,10 +28,9 @@
     <script src="https:**oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https:**oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
-
 </head>
 
-<body class="fix-header fix-sidebar">
+<body class="fix-header fix-sidebar" onload="createTimeline()">
     <!-- Preloader - style you can find in spinners.css -->
     <div class="preloader">
         <svg class="circular" viewBox="25 25 50 50">
@@ -350,16 +349,6 @@
                             </div>
                           </div>
                         </div>
-
-                        <div class="col-md-6 col-lg-4">
-                          <div class="card card-border">
-                            <div class="card-body mx-auto">
-                              <h3><strong>Pressure II</strong></h3>
-                              <!-- <canvas class="w-100" id="mycanvas-single" width="200" height="auto"></canvas> -->
-                               <div id="chart_div" class="d-flex justify-content-center"></div>
-                            </div>
-                          </div>
-                        </div>
                   </div>
 
                   <div class="row pt-4">
@@ -425,9 +414,7 @@
     <!--Smoothie live chart -->
     <script  type="text/javascript" src="js/lib/smoothie-js/smoothie.js"></script>
     <!--Custom JavaScript -->
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="js/custom.min.js"></script>
-    <script src="js/custom-google-charts.js"></script>
     <script src="js/custom-smoothie-charts.js"></script>
     <script src="js/custom.js"></script>
 
