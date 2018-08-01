@@ -234,11 +234,28 @@ if (option && typeof option === "object") {
 });
 //end of ehcart
 
-"tabledit-save-button btn btn-sm btn-success"
+
+//LIVE ALARM
+
+
+var currentDate = new Date();
 
 
 $(".tabledit-save-button.btn.btn-sm.btn-success").click(function(){
 
     $("#alarm-status").html("Acknowledged")
+    $("#current-date").html(currentDate.toLocaleString())
     $("#last-acknowledged-user").html("User X")
 });
+
+$("#btn-acknowledged-all").click(function(){
+    $('table#example23 tbody td:nth-child(5)').html('Acknowledged');
+    $('table#example23 tbody td:nth-child(7)').html(currentDate.toLocaleString());
+    $('table#example23 tbody td:nth-child(10)').html('User X');
+    $('table#example23 tbody tr:nth-child(4) td:nth-child(10)').html('User A');
+    // $('table#example23 tbody tr:nth-child(3)').addClass('bg-danger');
+    $('table#example23 tbody tr').addClass('bg-success');
+
+});
+
+// END OF LIVE ALARM

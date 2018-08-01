@@ -68,7 +68,7 @@
                         <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted  " href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
                         <li class="nav-item m-l-10"> <a class="nav-link sidebartoggler hidden-sm-down text-muted  " href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
                         <!-- Messages -->
-                        
+
                         <!-- End Messages -->
                     </ul>
                     <!-- User profile and search -->
@@ -172,8 +172,8 @@
                             <div class="card-body">
                                 <h4 class="card-title">LIVE ALARM</h4>
                                 <h6 class="card-subtitle">Export data to Copy, CSV, Excel, PDF & Print</h6>
+                                <button id="btn-acknowledged-all" class="btn btn-success btn m-b-10 m-l-5 float-right">Acknowledge All</button>
                                 <div class="table-responsive m-t-40">
-
                                     <table id="example23" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%" style="font-size:small">
                                         <thead>
                                             <tr>
@@ -206,7 +206,7 @@
                                             <td>A-9100</td>
                                             <td></td>
                                             <td>Normal</td>
-                                            <td>07/12/2018 22:00</td>
+                                            <td>6/7/2018, 7:00 PM</td>
                                             <td></td>
                                             <td></td>
                                             <td></td>
@@ -218,8 +218,8 @@
                                             <td>A-9100</td>
                                             <td></td>
                                             <td id="alarm-status">Danger</td>
-                                            <td>07/12/2018 22:00</td>
-                                            <td></td>
+                                            <td>6/7/2018, 7:01 PM</td>
+                                            <td id="current-date"></td>
                                             <td></td>
                                             <td></td>
                                             <td  id="last-acknowledged-user"></td>
@@ -230,7 +230,7 @@
                                             <td>A-9101</td>
                                             <td></td>
                                             <td>Normal</td>
-                                            <td>07/12/2018 22:00</td>
+                                            <td>6/7/2018, 7:05 PM</td>
                                             <td></td>
                                             <td></td>
                                             <td></td>
@@ -242,11 +242,11 @@
                                             <td>A-9020</td>
                                             <td></td>
                                             <td>Normal</td>
-                                            <td>07/11/2018 22:00</td>
-                                            <td>07/12/2018 22:44</td>
-                                            <td>07/12/2018 22:590</td>
+                                            <td>6/7/2018, 7:00 PM</td>
+                                            <td>7/7/2018, 7:20 PM</td>
+                                            <td>7/7/2018, 7:54 PM</td>
                                             <td>Bla bla bla..</td>
-                                            <td>User A</td>
+                                            <td id="user-A">User A</td>
                                           </tr>
 
                                         </tbody>

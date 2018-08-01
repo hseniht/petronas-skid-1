@@ -79,7 +79,7 @@ li.breadcrumb-item a:hover {
   transition: All 0.7s
 }
 .bg-success > td {
-  color:white;
+  color:white !important;
 }
 .bg-danger > td {
   color:white;
