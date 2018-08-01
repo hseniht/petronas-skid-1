@@ -13,7 +13,7 @@
     <title>Petronas Admin Dashboard</title>
 
     <link href="css/lib/chartist/chartist.min.css" rel="stylesheet">
-	<link href="css/lib/owl.carousel.min.css" rel="stylesheet" />
+    <link href="css/lib/owl.carousel.min.css" rel="stylesheet" />
     <link href="css/lib/owl.theme.default.min.css" rel="stylesheet" />
     <!-- Bootstrap Core CSS -->
     <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
@@ -22,14 +22,13 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-    <!-- Air Datepicker-->
-    <link href="css/lib/airdatepicker/datepicker.min.css" rel="stylesheet" type="text/css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:** -->
     <!--[if lt IE 9]>
     <script src="https:**oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https:**oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
+
 </head>
 
 <body class="fix-header fix-sidebar">
@@ -288,15 +287,13 @@
             <!-- Bread crumb -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-primary">DATA LOGS</h3> </div>
+                    <h3 class="text-primary">TANK LIVE DATA</h3> </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Field</a><span>: <strong>BOKOR</strong></li>
                         <li class="breadcrumb-item"><a href="tk-dashboard-2.html">Platform</a><span>: <strong>BOPD-B</strong></li>
                         <li class="breadcrumb-item"><a href="tk-dashboard-3.html">Overview</a></li>
-                        <li class="breadcrumb-item"><a href="tk-dashboard-4.html">Live Data</a></li>
-                        <li class="breadcrumb-item"><a href="tk-dashboard-4-3.html">Data Logs</a></li>
-                        <li class="breadcrumb-item active">Generate Report</li>
+                        <li class="breadcrumb-item active">Live Data</li>
                     </ol>
                 </div>
             </div>
@@ -312,70 +309,7 @@
                   <div class="d-flex justify-content-start"><strong>Live Data:&nbsp;</strong>CHEMICAL SKID SCALE INHIBITOR</div>
                 </div>
                 <br>
-                <!-- Start of Form Card -->
                 <div class="card">
-
-                  <!-- <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                      <h1>Report</h1>
-                  </div> -->
-
-                  <form>
-                    <div class="form-row">
-                      <div class="form-group col">
-                        <label for="inputState">Platform</label>
-                        <!-- <select id="inputState" class="form-control">
-                          <option selected>Choose...</option>
-                          <option>...</option>
-                        </select> -->
-                        <select class="custom-select" id="inputGroupSelect01">
-                          <option selected>Choose Platform</option>
-                          <option value="">BOKOR</option>
-                          <option value="">SIWA</option>
-                          <option value="">TUKAU</option>
-                          <option value="">BAKAU</option>
-                        </select>
-                      </div>
-                      <div class="form-group col">
-                        <label for="inputState">Skid</label>
-                        <select class="custom-select" id="inputGroupSelect02">
-                          <option selected>Select Skid</option>
-                          <option value="">BOPD-A</option>
-                          <option value="">BOPD-B</option>
-                          <option value="">BADP-C</option>
-                          <option value="">BADP-C</option>
-                        </select>
-                      </div>
-                      <div class="form-group col">
-                        <label for="inputState">Tank</label>
-                        <select class="custom-select" id="inputGroupSelect03">
-                          <option selected>Choose Tank</option>
-                          <option value="default">BIOCIDE</option>
-                          <option value="highest">CORROSION INHIBITOR</option>
-                          <option value="lowest">SCALE INHIBITOR</option>
-                        </select>
-                      </div>
-                    </div>
-
-                    <div class="form-row">
-                      <div class=" col-5 input-group mb-3" style="width: fit-content;">
-                        <input type='text' class='datepicker-here custom-select'
-                        data-range="true"
-                        data-multiple-dates-separator=" - "
-                        data-timepicker="true"
-                        data-time-format="hh:ii"
-                        data-language='en' placeholder="start date - end date" style="width:fit-content" />
-                      </div>
-                      <button type="button" id="getChartLogs" class="btn btn-info m-b-10">Get</button>
-                      <!-- <button type="submit" id="getRecord" class="btn btn-info m-b-10">Get in</button> -->
-                      <!-- <button id="getRecord" type="button" class="btn btn-info m-b-10">Get</button> -->
-                    </div>
-                  </form>
-
-                </div>
-                <!-- End of Form Card -->
-                <br>
-                <div class="card" id="sample-chartlogs-1">
-
 
                   <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                       <h1>T-9111</h1>
@@ -384,16 +318,14 @@
                   <div class="row">
                         <div class="col-md-6 col-lg-4">
                           <div class="card card-border">
-                            <div class="card-body">
+                            <div class="card-body mx-auto">
                               <div class="card-title">
                                   <h3><strong>Pressure</strong></h3>
-                                  <div class="card-content">
-                                      <div id="echart1-rainfall" style="height: 370px"></div>
-                                  </div>
                               </div>
                               <!-- <div class="flot-container" style="height:auto">
                                   <div id="cpu-load" class="cpu-load"></div>
                               </div> -->
+                              <canvas class="w-100"  id="mycanvas-color" width="" height="" style="min-height: 150px; min-width:285px"></canvas>
                             </div>
                           </div>
                         </div>
@@ -403,10 +335,8 @@
                             <div class="card-body">
                               <h3><strong>Level Consumption</strong></h3>
                               <!-- <h4 class="card-title">Line Chart with Area</h4> -->
-                              <!-- <div class="ct-area-ln-chart"></div> -->
-                              <div class="card-content">
-                                  <div id="echart2-line" style="height: 370px"></div>
-                              </div>
+                              <!-- <canvas class="w-100" id="mycanvas-test-color" width="200" height="auto"></canvas> -->
+                              <canvas class="w-100"  id="mycanvas-test-color" width="" height="" style="min-height: 150px; min-width:285px"></canvas>
                             </div>
                           </div>
                         </div>
@@ -415,10 +345,18 @@
                           <div class="card card-border">
                             <div class="card-body">
                               <h3><strong>Flow Rate</strong></h3>
-                              <div class="card-content">
-                                  <div id="echart3-area" style="height: 370px"></div>
-                              </div>
+                              <!-- <canvas class="w-100" id="mycanvas-single" width="200" height="auto"></canvas> -->
+                              <canvas class="w-100"  id="mycanvas-single" width="" height="" style="min-height: 150px; min-width:285px"></canvas>
+                            </div>
+                          </div>
+                        </div>
 
+                        <div class="col-md-6 col-lg-4">
+                          <div class="card card-border">
+                            <div class="card-body mx-auto">
+                              <h3><strong>Pressure II</strong></h3>
+                              <!-- <canvas class="w-100" id="mycanvas-single" width="200" height="auto"></canvas> -->
+                               <div id="chart_div" class="d-flex justify-content-center"></div>
                             </div>
                           </div>
                         </div>
@@ -426,8 +364,8 @@
 
                   <div class="row pt-4">
                      <div class="col-12 text-center">
-                       <!-- <h4>More comparison and history</h4> -->
-                       <a href="tk-dashboard-4-4.html" class="btn btn-primary btn-lg m-b-10 m-l-5">Generate Report</a>
+                       <h4>More comparison and history</h4>
+                       <a href="tk-dashboard-4-3.html" class="btn btn-primary btn-lg m-b-10 m-l-5">View Logs</a>
                      </div>
                   </div>
 
@@ -480,21 +418,17 @@
     <script src="js/lib/owl-carousel/owl.carousel.min.js"></script>
     <script src="js/lib/owl-carousel/owl.carousel-init.js"></script>
 
-    <!-- Air Datepicker-->
-    <script src="js/lib/airdatepicker/datepicker.min.js"></script>
-    <!-- Air Datepicker English language -->
-    <script src="js/lib/airdatepicker/i18n/datepicker.en.js"></script>
 
     <!-- <script src="js/lib/chartist/chartist.min.js"></script>
     <script src="js/lib/chartist/chartist-plugin-tooltip.min.js"></script>
     <script src="js/lib/chartist/chartist-init.js"></script> -->
-    <!-- Echart -->
-    <script src="js/lib/echart/echarts.js"></script>
-    <script src="js/lib/echart/echarts-init.js"></script>
     <!--Smoothie live chart -->
     <script  type="text/javascript" src="js/lib/smoothie-js/smoothie.js"></script>
     <!--Custom JavaScript -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="js/custom.min.js"></script>
+    <script src="js/custom-google-charts.js"></script>
+    <script src="js/custom-smoothie-charts.js"></script>
     <script src="js/custom.js"></script>
 
 </body>
