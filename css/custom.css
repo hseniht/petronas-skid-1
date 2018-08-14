@@ -113,3 +113,15 @@ div.smoothie-chart-tooltip {
   font-size: 10px;
   pointer-events: none;
 }
+
+
+/*tabs */
+.faded {
+  opacity: 0;
+
+}
+
+.faded.active.show {
+  opacity: 1;
+  transition: opacity .5s linear;
+}
