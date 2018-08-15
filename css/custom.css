@@ -38,6 +38,16 @@ li.breadcrumb-item a:hover {
   transition: all .3s ease;
 }
 
+.card-shadow-3{
+  box-shadow: 2px 3px 50px 0px rgba(46, 61, 73, 0.5);
+  transition: all .3s ease;
+}
+.card-shadow-3:hover {
+  box-shadow: 3px 5px 50px 5px rgba(46, 61, 73, 0.5);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
 .card-border {
   border: 2px solid rgba(0, 0, 0, 0.12);
 }
@@ -128,4 +138,36 @@ div.smoothie-chart-tooltip {
 
 .grid-list-toggle {
   min-width: 130px;
+}
+
+/*CARDS on GRID*/
+
+.card-responsive {
+  height: 250px;
+
+}
+
+.hr-thick-white {
+  border-color: white;
+  border-width: 4px;
+}
+
+.header-custom {
+  background: #fff;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+  height: 100px;
+  text-align: center;
+  padding: 30px 0px;
+  border-radius: 8px 8px 0 0;
+}
+
+#cards-custom .card {
+  padding: 0;
+}
+
+#cards-custom .card-body {
+  padding: 15px;
 }
