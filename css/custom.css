@@ -125,3 +125,7 @@ div.smoothie-chart-tooltip {
   opacity: 1;
   transition: opacity .5s linear;
 }
+
+.grid-list-toggle {
+  min-width: 130px;
+}
