@@ -27,23 +27,23 @@ li.breadcrumb-item a:hover {
 
 }
 
+.card-shadow-2{
+  box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
+  transition: all .3s ease;
+}
+
 .card-shadow-2:hover {
   box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
-.card-shadow-2{
-  box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
-  transition: all .3s ease;
-}
-
 .card-shadow-3{
-  box-shadow: 2px 3px 50px 0px rgba(46, 61, 73, 0.5);
+  box-shadow: 2px 4px 8px 0px rgba(46, 61, 73, 0.3);
   transition: all .3s ease;
 }
 .card-shadow-3:hover {
-  box-shadow: 3px 5px 50px 5px rgba(46, 61, 73, 0.5);
+  box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.3);
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
@@ -168,11 +168,16 @@ div.smoothie-chart-tooltip {
 #cards-custom .card {
   padding: 0;
   border-radius: 16px;
+  border: 1px solid rgba(0,0,0,.125);
 }
 
 #cards-custom .card-body {
   padding: 15px;
   border-radius:0px 0px 16px 16px;
+}
+
+#cards-custom a {
+  color: #67757c !important;
 }
 
 
