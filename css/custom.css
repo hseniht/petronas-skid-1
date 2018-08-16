@@ -110,9 +110,9 @@ li.breadcrumb-item a:hover {
     text-align: left;
 }
 /*hide compy button*/
-.dt-button.buttons-copy.buttons-html5 {
+/* .dt-button.buttons-copy.buttons-html5 {
   display: none;
-}
+} */
 
 div.smoothie-chart-tooltip {
   background: #444;
@@ -212,7 +212,7 @@ div.smoothie-chart-tooltip {
 
 /* Extra Large devices (desktops, less than 1440px) */
 @media (max-width: 1439.98px) {
-/* 
+/*
     .card-responsive {
       height: 230px;
       width: 230px;
