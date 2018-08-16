@@ -142,12 +142,6 @@ div.smoothie-chart-tooltip {
 
 /*CARDS on GRID*/
 
-.card-responsive {
-  height: 250px;
-  width: 250px
-
-}
-
 .hr-thick-white {
   border-color: white;
   border-width: 4px;
@@ -181,7 +175,7 @@ div.smoothie-chart-tooltip {
 }
 
 
-.grid-heading {
+.card-grid-heading {
   position: relative;
   padding:40% 0 5% 0;
   /* margin: 5% 0; */
@@ -189,11 +183,65 @@ div.smoothie-chart-tooltip {
   border-radius: 16px 16px 0 0;
 }
 
-.grid-stats {
+.grid-stats { /*unused - delete later*/
   position: relative;
   padding: 0 15px;
   line-height: 50%;
   margin: 10% 0;
   /* top: 25%; */
   bottom: 5%;
+}
+
+.card-responsive {
+  height: 250px;
+  width: 250px
+
+}
+
+/*media queries for Card*/
+
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { ... }
+
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px){
+
+}
+
+/* Extra Large devices (desktops, less than 1440px) */
+@media (max-width: 1439.98px) {
+/* 
+    .card-responsive {
+      height: 230px;
+      width: 230px;
+    } */
+ }
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+/*
+   .card-responsive {
+     height: 192px;
+     width: 192px;
+   }
+
+   #cards-custom .list-group.list-group-flush > li {
+      font-size: small;
+      padding: 0 5px 0 5px;
+
+   } */
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+  /* .card-responsive {
+    height: 250px;
+    width: 250px
+
+  } */
+
 }
