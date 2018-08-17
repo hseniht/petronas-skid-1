@@ -276,3 +276,12 @@ div.smoothie-chart-tooltip {
 
 
 }
+
+
+.card-custom-2 {
+  padding: 33% 5%;
+}
+
+.bg-danger .card-custom-2 {
+  color: white;
+}
