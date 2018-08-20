@@ -206,8 +206,13 @@ div.smoothie-chart-tooltip {
 .card-responsive {
   /* height: 250px;
   width: 250px */
-  min-height: 250px;
+
+  /* min-height: 250px; */
   /* min-width: 250px; */
+  max-width: 250px;
+
+  min-height: 240px;
+  min-width: 235px;
 }
 
 .card-custom-2 {
@@ -294,5 +299,34 @@ div.smoothie-chart-tooltip {
 
   } */
 
+
+}
+
+/*neww for today 20th Aug */
+
+/* Extra small devices (portrait phones, less than 576px) [iphone5]*/
+@media (max-width: 575.98px) {
+
+  #cards-custom .col-12 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-responsive {
+    /* height: 250px;
+    width: 250px */
+    min-height: 250px;
+    max-width: 250px;
+  }
+
+}
+
+
+@media (min-width: 1200px), screen and (max-width: 1320px)  {
+
+    .card-responsive {
+      min-height: 235px;
+      min-width: 210px;
+  }
 
 }
