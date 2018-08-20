@@ -11,6 +11,9 @@ li.breadcrumb-item a:hover {
   text-decoration: underline !important;
 }
 
+.back-button {
+  font-size: larger;
+}
 
 /*========== End of General ===========*/
 
@@ -108,11 +111,8 @@ li.breadcrumb-item a:hover {
 #example23 tbody tr td:last-child {
     text-align: left;
 }
-/*hide compy button*/
-/* .dt-button.buttons-copy.buttons-html5 {
-  display: none;
-} */
 
+/* for smoothie chart demo...delete later*/
 div.smoothie-chart-tooltip {
   background: #444;
   padding: 1em;
@@ -141,10 +141,10 @@ div.smoothie-chart-tooltip {
 
 /*CARDS on GRID*/
 
-.hr-thick-white {
+/* .hr-thick-white {
   border-color: white;
   border-width: 4px;
-}
+} */
 
 .card-header-custom {
   background: #fff;
@@ -196,6 +196,14 @@ div.smoothie-chart-tooltip {
   width: 250px */
   min-height: 250px;
   /* min-width: 250px; */
+}
+
+.card-custom-2 {
+  padding: 33% 5%;
+}
+
+.bg-danger .card-custom-2 {
+  color: white;
 }
 
 /*media queries for Card*/
@@ -275,13 +283,4 @@ div.smoothie-chart-tooltip {
   } */
 
 
-}
-
-
-.card-custom-2 {
-  padding: 33% 5%;
-}
-
-.bg-danger .card-custom-2 {
-  color: white;
 }
