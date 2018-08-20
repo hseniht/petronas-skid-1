@@ -138,6 +138,18 @@ div.smoothie-chart-tooltip {
 .grid-list-toggle {
   min-width: 130px;
 }
+.grid-list-toggle > ul li:first-child a {
+
+  border: 1px solid rgba(0,0,0,.125);
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.grid-list-toggle > ul li:last-child a {
+
+  border: 1px solid rgba(0,0,0,.125);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
 
 /*CARDS on GRID*/
 
