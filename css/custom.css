@@ -227,19 +227,12 @@ div.smoothie-chart-tooltip {
 
 
 
-/*New grids*/
+/*For extra small devices [iPhone 4~5]*/
 
 @media only screen and (max-width: 360px) {
     #cards-custom.container {
       padding: 0;
     }
-
-    /* .card-responsive {
-      min-height: 220px;
-      min-width: 220px;
-      width: -webkit-fill-available;
-
-    } */
 
 }
 
@@ -248,7 +241,7 @@ div.smoothie-chart-tooltip {
 
 /*neww for today 20th Aug */
 
-/* Extra small devices (portrait phones, less than 576px) [iphone5]*/
+/* Medium devices */
 @media (max-width: 991.98px) {
 
   #cards-custom .col-12 {
@@ -281,6 +274,7 @@ div.smoothie-chart-tooltip {
 
 }
 
+/* Extra large devices */
 @media (min-width: 1200px), screen and (max-width: 1320px)  {
 
     .card-responsive {
@@ -289,3 +283,27 @@ div.smoothie-chart-tooltip {
   }
 
 }
+
+/*smaller custom responsive grid cards on FIELD Page*/
+.card-responsive-small {
+  width: 200px;
+  height:200px;
+}
+
+.card-text-center {
+  position: absolute;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#cards-custom a.bg-danger:hover {
+  background-color: #fc6180!important;
+}
+
+#cards-custom .bg-danger .card-text-center {
+  color: white;
+}
+
+/*end of smaller custom responsive grid cards on FIELD Page*/
