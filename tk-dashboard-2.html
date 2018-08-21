@@ -113,14 +113,12 @@
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="tk-alarm-live-1.html">Live Alarm</a></li>
                                 <li><a href="tk-alarm-live-2.html">Historical Alarm</a></li>
-                                <li><a href="chart-chartjs.html">Charts</a></li>
                             </ul>
                         </li>
 
                         <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-table"></i><span class="hide-menu">Reporting</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="tk-report-table-2.html">Historical data</a></li>
-                                <li><a href="table-datatable.html">Data Tables</a></li>
                             </ul>
                         </li>
                         <li class="nav-label">Profile</li>
@@ -239,355 +237,230 @@
                   <div class="col-lg-12">
                     <div class="card">
                       <div class="card-body">
-                          <div class="row d-flex align-items-center pt-3 pb-2 mb-3 border-bottom">
-                              <h1 class="col-lg-7 col-md-7 mb-3">Choose Platform</h1>
-                              <div class="col-lg-4 col-md-12 input-group mb-3 ml-auto">
-                                <input type="text" class="form-control" placeholder="Search..">
-                                <div class="input-group-append">
-                                  <button class="btn btn-outline-secondary" type="button"><i class="ti-search"></i></button>
-                                </div>
+                        <div class="row d-flex align-items-center pt-3 pb-2 mb-3 border-bottom">
+                          <h1 class="col-lg-7 col-md-7 mb-3">Choose Platform</h1>
+                            <div class="col-lg-4 col-md-12 input-group mb-3 ml-auto">
+                              <input type="text" class="form-control" placeholder="Search..">
+                              <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button"><i class="ti-search"></i></button>
                               </div>
-                              <div class="grid-list-toggle col-lg-1 col-md-1 ml-auto"> <!--d-flex justify-content-end -->
-                                <ul class="nav nav-pills mb-3">
-                                  <li class="nav-item"> <a href="#navpills-1" class="nav-link active" data-toggle="tab" aria-expanded="false"><i class="fas fa-th"></i></a> </li>
-                                  <li class="nav-item"> <a href="#navpills-2" class="nav-link" data-toggle="tab" aria-expanded="false"><i class="fas fa-list-ul"></i></a> </li>
-                                </ul>
-                              </div>
+                            </div>
+                            <div class="grid-list-toggle col-lg-1 col-md-1 ml-auto"> <!--d-flex justify-content-end -->
+                              <ul class="nav nav-pills mb-3">
+                                <li class="nav-item"> <a href="#navpills-1" class="nav-link active" data-toggle="tab" aria-expanded="false"><i class="fas fa-th"></i></a> </li>
+                                <li class="nav-item"> <a href="#navpills-2" class="nav-link" data-toggle="tab" aria-expanded="false"><i class="fas fa-list-ul"></i></a> </li>
+                              </ul>
+                            </div>
                           </div>
                           <div class="tab-content br-n pn">
-                              <!-- Grid View Tab Content-->
-                              <div id="navpills-1" class="tab-pane faded show active">
 
-
-                                  <!-- choosen attempt -->
-                                    <div id="cards-custom" class="container">
-                                      <div class="row">
-                                         <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                                             <a href="#" class="card card-responsive bg-white card-shadow">
-                                               <h2 class="text-center card-grid-heading">BODP-A</h2>
-                                                <!-- <ul class="list-group list-group-flush">
-                                                  <li class="list-group-item d-flex justify-content-between align-items-center py-1">
-                                                    <small>T-9121 (Biocide)</small>
-                                                    <span class="badge badge-pill"><strong>17.5%</strong><i class="text-danger fas fa-exclamation-circle ml-2"></i></span>
-                                                  </li>
-                                                  <li class="list-group-item d-flex justify-content-between align-items-center py-1">
-                                                    <small>T-9101 (Corrosion)</small>
-                                                    <span class="badge badge-pill"><strong>49.5%</strong><i class=" text-warning fas fa-exclamation-triangle ml-2"></i></span>
-                                                  </li>
-                                                  <li class="list-group-item d-flex justify-content-between align-items-center py-1">
-                                                    <small>T-9111 (Scale)</small>
-                                                    <span class="badge badge-pill"><strong>17.5%</strong><i class="text-danger fas fa-exclamation-circle ml-2"></i></span>
-                                                  </li>
-                                                </ul> -->
-                                             </a>
-                                         </div>
-                                         <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                                             <a href="tk-dashboard-3.html" class="card card-responsive bg-white card-shadow-2">
-                                               <h2 class="text-center card-grid-heading bg-danger">BODP-B</h2>
-                                                <ul class="list-group list-group-flush">
-                                                  <li class="list-group-item d-flex justify-content-between align-items-center py-1">
-                                                    <small>T-9101 (Corrosion)</small>
-                                                    <span class="badge badge-pill"><strong>15.00%</strong><i class=" text-danger fas fa-exclamation-circle ml-2"></i></span>
-                                                  </li>
-                                                  <li class="list-group-item d-flex justify-content-between align-items-center py-1">
-                                                    <small>T-9111 (Scale)</small>
-                                                    <span class="badge badge-pill"><strong>49.50%</strong><i class="text-warning fas fa-exclamation-triangle ml-2"></i></span>
-                                                  </li>
-                                                </ul>
-                                             </a>
-                                         </div>
-                                         <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                                             <a href="#" class="card card-responsive bg-white card-shadow-3">
-                                               <h2 class="text-center card-grid-heading">BOPD-C</h2>
-
-                                             </a>
-                                         </div>
-                                         <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                                             <a href="#" class="card card-responsive bg-white card-shadow-3">
-                                               <h2 class="text-center card-grid-heading">BOK-A</h2>
-
-                                             </a>
-                                         </div>
-                                         <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                                             <a href="#" class="card card-responsive bg-white card-shadow-3">
-                                               <h2 class="text-center card-grid-heading bg-danger">BOP-A</h2>
-                                                <ul class="list-group list-group-flush">
-                                                  <li class="list-group-item d-flex justify-content-between align-items-center py-1">
-                                                    <small>T-9221 (Biocide)</small>
-                                                    <span class="badge badge-pill"><strong>17.5%</strong><i class="text-danger fas fa-exclamation-circle ml-2"></i></span>
-                                                  </li>
-                                                  <li class="list-group-item d-flex justify-content-between align-items-center py-1">
-                                                    <small>T-9201 (Corrosion)</small>
-                                                    <span class="badge badge-pill"><strong>49.5%</strong><i class=" text-warning fas fa-exclamation-triangle ml-2"></i></span>
-                                                  </li>
-                                                  <li class="list-group-item d-flex justify-content-between align-items-center py-1">
-                                                    <small>T-9211 (Scale)</small>
-                                                    <span class="badge badge-pill"><strong>17.5%</strong><i class="text-danger fas fa-exclamation-circle ml-2"></i></span>
-                                                  </li>
-                                                </ul>
-                                             </a>
-                                         </div>
-                                         <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                                             <a href="#" class="card card-responsive bg-white card-shadow-3">
-                                               <h2 class="text-center card-grid-heading">BOV-A</h2>
-
-                                             </a>
-                                         </div>
-                                         <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                                             <a href="#" class="card card-responsive bg-white card-shadow-3">
-                                               <h2 class="text-center card-grid-heading bg-danger">BADP-A</h2>
-                                                <ul class="list-group list-group-flush">
-                                                  <li class="list-group-item d-flex justify-content-between align-items-center py-1">
-                                                    <small>T-9401 (Corrosion)</small>
-                                                    <span class="badge badge-pill"><strong>49.5%</strong><i class=" text-warning fas fa-exclamation-triangle ml-2"></i></span>
-                                                  </li>
-                                                  <li class="list-group-item d-flex justify-content-between align-items-center py-1">
-                                                    <small>T-9411 (Scale)</small>
-                                                    <span class="badge badge-pill"><strong>17.5%</strong><i class="text-danger fas fa-exclamation-circle ml-2"></i></span>
-                                                  </li>
-                                                </ul>
-                                             </a>
-                                         </div>
-                                         <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                                             <a href="#" class="card card-responsive bg-white card-shadow-3">
-                                               <h2 class="text-center card-grid-heading bg-warning">BADP-B</h2>
-                                                <ul class="list-group list-group-flush">
-                                                  <li class="list-group-item d-flex justify-content-between align-items-center py-1">
-                                                    <small>T-9501 (Corrosion)</small>
-                                                    <span class="badge badge-pill"><strong>49.5%</strong><i class=" text-warning fas fa-exclamation-triangle ml-2"></i></span>
-                                                  </li>
-                                                </ul>
-                                             </a>
-                                         </div>
-                                         <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                                             <a href="#" class="card card-responsive bg-white card-shadow-3">
-                                               <h2 class="text-center card-grid-heading bg-danger">BADP-C</h2>
-                                                <ul class="list-group list-group-flush">
-                                                  <li class="list-group-item d-flex justify-content-between align-items-center py-1">
-                                                    <small>T-9621 (Biocide)</small>
-                                                    <span class="badge badge-pill"><strong>17.5%</strong><i class="text-danger fas fa-exclamation-circle ml-2"></i></span>
-                                                  </li>
-
-                                                </ul>
-                                             </a>
-                                         </div>
-
-
-                                     </div>
-                                    </div>
-
-                                  <!-- Fourth attempt -->
-                                    <!-- <div class="container">
-
-                                      <div class="row" id="cards-custom">
-                                         <div class="col-sm-12 col-lg-3">
-                                             <div class="card card-responsive bg-danger card-shadow-3">
-                                               <h1 class="text-white">BOPD-A</h1>
-                                               <hr class="hr-thick-white"/>
-                                               <div class="text-white">
-                                                 <p class="card-text"><small class="text-white">Biocide T-8010 15.00%</small></p>
-
-                                               </div>
-                                             </div>
-                                         </div>
-                                         <div class="col-sm-12 col-lg-3">
-                                             <a href="tk-dashboard-3.html" class="card card-responsive bg-dark card-shadow">
-                                               <h5 class="card-title">Card title</h5>
-                                               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                             </a>
-                                         </div>
-                                         <div class="col-sm-12 col-lg-3">
-                                             <div class="card card-responsive bg-white card-shadow-3">
-                                               <h2 class="text-center card-grid-heading">BOKD-A1</h2>
-                                                <ul class="list-group list-group-flush">
-                                                  <li class="list-group-item d-flex justify-content-between align-items-center py-1">
-                                                    <small>T-9121 (Biocide)</small>
-                                                    <span class="badge badge-pill"><strong>17.5%</strong><i class="text-danger fas fa-exclamation-circle ml-2"></i></span>
-                                                  </li>
-                                                  <li class="list-group-item d-flex justify-content-between align-items-center py-1">
-                                                    <small>T-9101 (Corrosion)</small>
-                                                    <span class="badge badge-pill"><strong>49.5%</strong><i class=" text-warning fas fa-exclamation-triangle ml-2"></i></span>
-                                                  </li>
-                                                  <li class="list-group-item d-flex justify-content-between align-items-center py-1">
-                                                    <small>T-9111 (Scale)</small>
-                                                    <span class="badge badge-pill"><strong>17.5%</strong><i class="text-danger fas fa-exclamation-circle ml-2"></i></span>
-                                                  </li>
-                                                </ul>
-                                             </div>
-                                         </div>
-                                         <div class="col-sm-12 col-lg-3">
-                                             <div class="card card-responsive bg-white card-shadow-3">
-                                               <h2 class="text-center card-grid-heading">BOKD-A</h2>
-                                               <div class="grid-stats">
-                                                 <p class="card-text"><small class="text-dark">T-9121 (Biocide) <strong>17.5%</strong></small></p>
-                                                 <p class="card-text"><small class="text-dark">T-9101 (Corrosion) <strong>17.5%</strong></small></p>
-                                                 <p class="card-text"><small class="text-dark">T-9111 (Scale Inhibitor) <strong>17.5%</strong></small></p>
-                                                </div>
-                                             </div>
-                                         </div>
-                                         <div class="col-sm-12 col-lg-3">
-                                             <div class="card card-responsive bg-dark card-shadow">
-                                               <h2 class="text-center text-white card-grid-heading">BOKD-A</h2>
-                                               <div class="grid-stats">
-                                                 <p class="card-text"><small class="text-white">T-9121 Biocide  17.50%.</small></p>
-                                                 <p class="card-text"><small class="text-white">T-9101 Corrosion Inhibitor  47.50%.</small></p>
-                                                 <p class="card-text"><small class="text-white">T-9111 Scale Inhibitor 15.00%.</small></p>
-                                                </div>
-                                             </div>
-                                         </div>
-                                         <div class="col-sm-12 col-lg-3">
-                                             <div class="card card-responsive bg-danger card-shadow-3">
-                                               <div class="card-header-custom">BOKD-B</div>
-                                               <div class="card-body text-white">
-                                                 <div class="card-text d-flex justify-content-between align-items-center"><small class="text-white">Biocide T-8010 15.00%</small>
-                                                   <span class="badge badge-pill"><i class="fas fa-exclamation-circle"></i></span>
-                                                 </div>
-                                               </div>
-                                             </div>
-                                         </div>
-                                         <div class="col-sm-12 col-lg-3">
-                                             <div class="card card-responsive card-shadow-3">
-
-                                               <div class="card-header-custom">BOKD-C</div>
-
-                                               <ul class="list-group list-group-flush">
-                                                <li class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                                                  <small>T-9121 Biocide  17.50%</small>
-                                                  <span class="badge badge-pill"><i class=" text-danger fas fa-exclamation-circle"></i></span>
+                            <!-- GRID View Tab Content-->
+                            <div id="navpills-1" class="tab-pane faded show active">
+                                  <div id="cards-custom" class="container">
+                                    <div class="row">
+                                       <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                           <a href="#" class="card card-responsive bg-white card-shadow">
+                                             <h2 class="text-center card-grid-heading">BODP-A</h2>
+                                           </a>
+                                       </div>
+                                       <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                           <a href="tk-dashboard-3.html" class="card card-responsive bg-white card-shadow-2">
+                                             <h2 class="text-center card-grid-heading bg-danger">BODP-B</h2>
+                                              <ul class="list-group list-group-flush">
+                                                <li class="list-group-item d-flex justify-content-between align-items-center py-1">
+                                                  <small>T-9101 (Corrosion)</small>
+                                                  <span class="badge badge-pill"><strong>15.00%</strong><i class=" text-danger fas fa-exclamation-circle ml-2"></i></span>
                                                 </li>
-                                                <li class="list-group-item d-flex justify-content-between align-items-center text-dark">
-                                                  <small>T-9101 Corrosion 47.50%</small>
-                                                  <span class="badge badge-pill"><i class=" text-warning fas fa-exclamation-triangle"></i></span>
+                                                <li class="list-group-item d-flex justify-content-between align-items-center py-1">
+                                                  <small>T-9111 (Scale)</small>
+                                                  <span class="badge badge-pill"><strong>49.50%</strong><i class="text-warning fas fa-exclamation-triangle ml-2"></i></span>
                                                 </li>
-                                                <li class="list-group-item text-dark"><small>T-9111 Scale  17.50%</small></li>
                                               </ul>
-                                             </div>
-                                         </div>
+                                           </a>
+                                       </div>
+                                       <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                           <a href="#" class="card card-responsive bg-white card-shadow-3">
+                                             <h2 class="text-center card-grid-heading">BOPD-C</h2>
 
-                                         <div class="col-sm-12 col-lg-3">
-                                             <div class="card card-responsive bg-danger card-shadow-3">
-                                               <div class="card-header-custom">BOKD-D</div>
-                                               <div class="card-body text-dark bg-white">
-                                                 <div class="card-text d-flex justify-content-between align-items-center"><small>T-8010 Biocide (15.00%)</small>
-                                                   <span class="badge badge-pill"><i class="fas fa-exclamation-circle"></i></span>
-                                                 </div>
-                                               </div>
-                                             </div>
-                                         </div>
-                                     </div>
-                                    </div> -->
+                                           </a>
+                                       </div>
+                                       <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                           <a href="#" class="card card-responsive bg-white card-shadow-3">
+                                             <h2 class="text-center card-grid-heading">BOK-A</h2>
 
-                                 </div>
+                                           </a>
+                                       </div>
+                                       <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                           <a href="#" class="card card-responsive bg-white card-shadow-3">
+                                             <h2 class="text-center card-grid-heading bg-danger">BOP-A</h2>
+                                              <ul class="list-group list-group-flush">
+                                                <li class="list-group-item d-flex justify-content-between align-items-center py-1">
+                                                  <small>T-9221 (Biocide)</small>
+                                                  <span class="badge badge-pill"><strong>17.5%</strong><i class="text-danger fas fa-exclamation-circle ml-2"></i></span>
+                                                </li>
+                                                <li class="list-group-item d-flex justify-content-between align-items-center py-1">
+                                                  <small>T-9201 (Corrosion)</small>
+                                                  <span class="badge badge-pill"><strong>49.5%</strong><i class=" text-warning fas fa-exclamation-triangle ml-2"></i></span>
+                                                </li>
+                                                <li class="list-group-item d-flex justify-content-between align-items-center py-1">
+                                                  <small>T-9211 (Scale)</small>
+                                                  <span class="badge badge-pill"><strong>17.5%</strong><i class="text-danger fas fa-exclamation-circle ml-2"></i></span>
+                                                </li>
+                                              </ul>
+                                           </a>
+                                       </div>
+                                       <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                           <a href="#" class="card card-responsive bg-white card-shadow-3">
+                                             <h2 class="text-center card-grid-heading">BOV-A</h2>
 
-                              <!-- List View Tab Content-->
-                              <div id="navpills-2" class="tab-pane faded">
-                                    <div>
-                                      <div id="sample-report-table-1" class="row">
-                                          <div class="col-12">
-                                              <div class="card">
-                                                  <div class="card-body">
-                                                      <!-- <h4 class="card-title">Data Export of BOKOR - BODP-B</h4>
-                                                      <h6 class="card-subtitle">Export data to Copy, CSV, Excel, PDF & Print</h6> -->
-                                                      <div class="table-responsive m-t-40">
+                                           </a>
+                                       </div>
+                                       <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                           <a href="#" class="card card-responsive bg-white card-shadow-3">
+                                             <h2 class="text-center card-grid-heading bg-danger">BADP-A</h2>
+                                              <ul class="list-group list-group-flush">
+                                                <li class="list-group-item d-flex justify-content-between align-items-center py-1">
+                                                  <small>T-9401 (Corrosion)</small>
+                                                  <span class="badge badge-pill"><strong>49.5%</strong><i class=" text-warning fas fa-exclamation-triangle ml-2"></i></span>
+                                                </li>
+                                                <li class="list-group-item d-flex justify-content-between align-items-center py-1">
+                                                  <small>T-9411 (Scale)</small>
+                                                  <span class="badge badge-pill"><strong>17.5%</strong><i class="text-danger fas fa-exclamation-circle ml-2"></i></span>
+                                                </li>
+                                              </ul>
+                                           </a>
+                                       </div>
+                                       <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                           <a href="#" class="card card-responsive bg-white card-shadow-3">
+                                             <h2 class="text-center card-grid-heading bg-warning">BADP-B</h2>
+                                              <ul class="list-group list-group-flush">
+                                                <li class="list-group-item d-flex justify-content-between align-items-center py-1">
+                                                  <small>T-9501 (Corrosion)</small>
+                                                  <span class="badge badge-pill"><strong>49.5%</strong><i class=" text-warning fas fa-exclamation-triangle ml-2"></i></span>
+                                                </li>
+                                              </ul>
+                                           </a>
+                                       </div>
+                                       <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                           <a href="#" class="card card-responsive bg-white card-shadow-3">
+                                             <h2 class="text-center card-grid-heading bg-danger">BADP-C</h2>
+                                              <ul class="list-group list-group-flush">
+                                                <li class="list-group-item d-flex justify-content-between align-items-center py-1">
+                                                  <small>T-9621 (Biocide)</small>
+                                                  <span class="badge badge-pill"><strong>17.5%</strong><i class="text-danger fas fa-exclamation-circle ml-2"></i></span>
+                                                </li>
 
-                                                          <table id="choose-platform-table" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
-                                                              <thead>
-                                                                  <tr>
-                                                                      <th rowspan="2" class="text-center py-4">Platform</th>
-                                                                      <th colspan="3" class="text-center">Storage Tank Type</th>
-
-                                                                  </tr>
-                                                                  <tr>
-
-                                                                      <th>Biocide</th>
-                                                                      <th>Corrosion</th>
-                                                                      <th>Scale Inhibitor</th>
-                                                                  </tr>
-                                                              </thead>
-                                                              <!-- <tfoot>
-                                                                  <tr>
-                                                                      <th>Name</th>
-                                                                      <th>Position</th>
-                                                                      <th>Office</th>
-                                                                      <th>Age</th>
-                                                                      <th>Start date</th>
-                                                                      <th>Salary</th>
-                                                                  </tr>
-                                                              </tfoot> -->
-                                                              <tbody>
-                                                                <tr>
-                                                                  <td>BODP-A</td>
-                                                                  <td>86.00% (T-XXXX)</td>
-                                                                  <td>85.00% (T-XXXX)</td>
-                                                                  <td>79.50% (T-XXXX)</td>
-                                                                </tr>
-                                                                <tr>
-                                                                  <td>BODP-B</td>
-                                                                  <td>86.00% (T-9121)</td>
-                                                                  <td>15.00% (T-9101)</td>
-                                                                  <td>49.50% (T-9111)</td>
-                                                                </tr>
-                                                                <tr>
-                                                                  <td>BODP-C</td>
-                                                                  <td>86.00% (T-XXXX)</td>
-                                                                  <td>85.00% (T-XXXX)</td>
-                                                                  <td>79.50% (T-XXXX)</td>
-                                                                </tr>
-                                                                <tr>
-                                                                  <td>BOK-A</td>
-                                                                  <td>86.00% (T-XXXX)</td>
-                                                                  <td>85.00% (T-XXXX)</td>
-                                                                  <td>79.50% (T-XXXX)</td>
-                                                                </tr>
-                                                                <tr>
-                                                                  <td>BOP-A</td>
-                                                                  <td>17.50% (T-9221)</td>
-                                                                  <td>49.50% (T-9201)</td>
-                                                                  <td>17.50% (T-9211)</td>
-                                                                </tr>
-                                                                <tr>
-                                                                  <td>BOV-A</td>
-                                                                  <td>88.00% (T-XXXX)</td>
-                                                                  <td>85.00% (T-XXXX)</td>
-                                                                  <td>79.50% (T-XXXX)</td>
-                                                                </tr>
-                                                                <tr>
-                                                                  <td>BADP-A</td>
-                                                                  <td>76.00% (T-9421)</td>
-                                                                  <td>49.50% (T-9401)</td>
-                                                                  <td>17.50% (T-9411)</td>
-                                                                </tr>
-                                                                <tr>
-                                                                  <td>BADP-B</td>
-                                                                  <td>86.00% (T-XXXX)</td>
-                                                                  <td>39.50% (T-9501)</td>
-                                                                  <td>79.50% (T-XXXX)</td>
-                                                                </tr>
-                                                                <tr>
-                                                                  <td>BADP-C</td>
-                                                                  <td>17.50% (T-9621)</td>
-                                                                  <td>85.00% (T-XXXX)</td>
-                                                                  <td>79.50% (T-XXXX)</td>
-                                                                </tr>
-
-                                                              </tbody>
-                                                          </table>
-                                                      </div>
-                                                  </div>
-                                              </div>
+                                              </ul>
+                                           </a>
+                                       </div>
 
 
-                                          </div>
+                                   </div>
+                                  </div>
+                             </div>
+
+                            <!-- LIST View Tab Content-->
+                            <div id="navpills-2" class="tab-pane faded">
+                              <div>
+                                <div id="sample-report-table-1" class="row">
+                                  <div class="col-12">
+                                    <div class="card">
+                                      <div class="card-body">
+                                        <div class="table-responsive m-t-40">
+                                          <table id="choose-platform-table" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
+                                            <thead>
+                                              <tr>
+                                                <th rowspan="2" class="text-center py-4">Platform</th>
+                                                <th colspan="3" class="text-center">Storage Tank Type</th>
+                                              </tr>
+                                              <tr>
+                                                <th>Biocide</th>
+                                                <th>Corrosion</th>
+                                                <th>Scale Inhibitor</th>
+                                              </tr>
+                                            </thead>
+                                            <!-- <tfoot>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th>Position</th>
+                                                    <th>Office</th>
+                                                    <th>Age</th>
+                                                    <th>Start date</th>
+                                                    <th>Salary</th>
+                                                </tr>
+                                            </tfoot> -->
+                                            <tbody>
+                                              <tr>
+                                                <td>BODP-A</td>
+                                                <td>86.00% (T-XXXX)</td>
+                                                <td>85.00% (T-XXXX)</td>
+                                                <td>79.50% (T-XXXX)</td>
+                                              </tr>
+                                              <tr>
+                                                <td>BODP-B</td>
+                                                <td>86.00% (T-9121)</td>
+                                                <td>15.00% (T-9101)</td>
+                                                <td>49.50% (T-9111)</td>
+                                              </tr>
+                                              <tr>
+                                                <td>BODP-C</td>
+                                                <td>86.00% (T-XXXX)</td>
+                                                <td>85.00% (T-XXXX)</td>
+                                                <td>79.50% (T-XXXX)</td>
+                                              </tr>
+                                              <tr>
+                                                <td>BOK-A</td>
+                                                <td>86.00% (T-XXXX)</td>
+                                                <td>85.00% (T-XXXX)</td>
+                                                <td>79.50% (T-XXXX)</td>
+                                              </tr>
+                                              <tr>
+                                                <td>BOP-A</td>
+                                                <td>17.50% (T-9221)</td>
+                                                <td>49.50% (T-9201)</td>
+                                                <td>17.50% (T-9211)</td>
+                                              </tr>
+                                              <tr>
+                                                <td>BOV-A</td>
+                                                <td>88.00% (T-XXXX)</td>
+                                                <td>85.00% (T-XXXX)</td>
+                                                <td>79.50% (T-XXXX)</td>
+                                              </tr>
+                                              <tr>
+                                                <td>BADP-A</td>
+                                                <td>76.00% (T-9421)</td>
+                                                <td>49.50% (T-9401)</td>
+                                                <td>17.50% (T-9411)</td>
+                                              </tr>
+                                              <tr>
+                                                <td>BADP-B</td>
+                                                <td>86.00% (T-XXXX)</td>
+                                                <td>39.50% (T-9501)</td>
+                                                <td>79.50% (T-XXXX)</td>
+                                              </tr>
+                                              <tr>
+                                                <td>BADP-C</td>
+                                                <td>17.50% (T-9621)</td>
+                                                <td>85.00% (T-XXXX)</td>
+                                                <td>79.50% (T-XXXX)</td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
                                       </div>
                                     </div>
+
+
+                                  </div>
+                                </div>
                               </div>
+                            </div>
+
                           </div>
+                        </div>
                       </div>
-
                     </div>
-                </div>
-
-                </div>
+                  </div>
                 <!--end of test card 2 NAVs -->
 
 

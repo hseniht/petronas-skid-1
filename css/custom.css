@@ -126,7 +126,7 @@ div.smoothie-chart-tooltip {
 }
 
 
-/*tabs */
+/* --- tabs --- */
 .faded {
   opacity: 0;
 
@@ -153,12 +153,7 @@ div.smoothie-chart-tooltip {
   border-bottom-left-radius: 0;
 }
 
-/*CARDS on GRID*/
-
-/* .hr-thick-white {
-  border-color: white;
-  border-width: 4px;
-} */
+/* --- CARDS on GRID --- */
 
 .card-header-custom {
   background: #fff;
@@ -206,13 +201,7 @@ div.smoothie-chart-tooltip {
 }
 
 .card-responsive {
-  /* height: 250px;
-  width: 250px */
-
-  /* min-height: 250px; */
-  /* min-width: 250px; */
   max-width: 250px;
-
   min-height: 240px;
   min-width: 235px;
 }
@@ -226,7 +215,6 @@ div.smoothie-chart-tooltip {
 }
 
 
-
 /*For extra small devices [iPhone 4~5]*/
 
 @media only screen and (max-width: 360px) {
@@ -237,9 +225,7 @@ div.smoothie-chart-tooltip {
 }
 
 
-
-
-/*neww for today 20th Aug */
+/*test for 20th Aug */
 
 /* Medium devices */
 @media (max-width: 991.98px) {
