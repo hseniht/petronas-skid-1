@@ -249,6 +249,22 @@ div.smoothie-chart-tooltip {
 /*neww for today 20th Aug */
 
 /* Extra small devices (portrait phones, less than 576px) [iphone5]*/
+@media (max-width: 991.98px) {
+
+  #cards-custom .col-12 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-responsive {
+    height: 250px;
+    width: 250px
+    /* min-height: 250px;
+    max-width: 250px; */
+  }
+
+}
+/* Extra small devices (portrait phones, less than 576px) [iphone5]*/
 @media (max-width: 575.98px) {
 
   #cards-custom .col-12 {
@@ -264,7 +280,6 @@ div.smoothie-chart-tooltip {
   }
 
 }
-
 
 @media (min-width: 1200px), screen and (max-width: 1320px)  {
 
