@@ -293,3 +293,8 @@ div.smoothie-chart-tooltip {
 }
 
 /*end of smaller custom responsive grid cards on FIELD Page*/
+
+.tank-details {
+  font-size: smaller;
+  line-height: 24px;
+}
