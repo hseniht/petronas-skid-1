@@ -17,6 +17,12 @@ li.breadcrumb-item a:hover {
   left: 0;
 }
 
+.back-button-bottom {
+  bottom:0;
+  border:0;
+  background-color: transparent
+}
+
 /*========== End of General ===========*/
 
 
@@ -182,6 +188,10 @@ div.smoothie-chart-tooltip {
   color: #67757c !important;
 }
 
+#cards-custom .card>.list-group:last-child .list-group-item:last-child {
+    border-bottom-right-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem;
+}
 
 .card-grid-heading {
   position: relative;
@@ -256,6 +266,13 @@ div.smoothie-chart-tooltip {
     width: 250px */
     min-height: 250px;
     max-width: 250px;
+  }
+
+  .card-responsive-small {
+    width: -webkit-fill-available !important;
+    height:100px!important;
+    border-radius:8px!important;
+    margin: 0.5rem 0;
   }
 
 }
