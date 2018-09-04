@@ -159,7 +159,7 @@ div.smoothie-chart-tooltip {
   border-bottom-left-radius: 0;
 }
 
-/* --- CARDS on GRID --- */
+/*============================ --- CARDS on GRID --- =========================*/
 
 .card-header-custom {
   background: #fff;
@@ -225,6 +225,8 @@ div.smoothie-chart-tooltip {
 }
 
 
+/* ========================== CARD MEDIA QUERIES  =======================*/
+
 /*For extra small devices [iPhone 4~5]*/
 
 @media only screen and (max-width: 360px) {
@@ -233,9 +235,6 @@ div.smoothie-chart-tooltip {
     }
 
 }
-
-
-/*test for 20th Aug */
 
 /* Medium devices */
 @media (max-width: 991.98px) {
@@ -253,7 +252,38 @@ div.smoothie-chart-tooltip {
   }
 
 }
-/* Extra small devices (portrait phones, less than 576px) [iphone5]*/
+
+/* Small devices (landscape phones, 576px and up)*/
+/* @media (min-width: 576px) and (max-width: 768px) {
+
+  .card-responsive-small {
+
+    height:179px!important;
+  }
+
+} */
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  .card-responsive-small {
+    width: 175px!important;
+    height:175px!important;
+  }
+
+}
+
+/* Large devices (iPad Pro , desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+  .card-responsive-small {
+    width: 185px!important;
+    height:185px!important;
+  }
+
+}
+
+/* small devices (portrait phones, less than 576px) [iphone5]*/
 @media (max-width: 575.98px) {
 
   #cards-custom .col-12 {
