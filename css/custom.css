@@ -59,7 +59,7 @@ li.breadcrumb-item a:hover {
 }
 
 .card-border {
-  border: 2px solid rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 .progress.vertical {
@@ -313,6 +313,7 @@ div.smoothie-chart-tooltip {
     .card-responsive {
       min-height: 235px;
       min-width: 210px;
+
   }
 
 }
@@ -337,6 +338,10 @@ div.smoothie-chart-tooltip {
 
 #cards-custom .bg-danger .card-text-center {
   color: white;
+}
+
+#card-custom-chart-style .card {
+  min-height: 320px;
 }
 
 /*end of smaller custom responsive grid cards on FIELD Page*/

@@ -31,6 +31,14 @@
 
 </head>
 
+<!-- Temporarly style for this page only-->
+<style>
+/* .card {
+  border-radius:8px;
+  height: 315px;
+} */
+</style>
+
 <body class="fix-header fix-sidebar">
     <!-- Preloader - style you can find in spinners.css -->
     <div class="preloader">
@@ -166,22 +174,20 @@
                       <h1>T-9111</h1>
                   </div>
 
-                  <div class="row">
-                        <div class="col-md-6 col-lg-4">
+                  <div class="row" id="card-custom-chart-style">
+                        <div class="col-md-12 col-lg-4 d-none">
                           <div class="card card-border">
                             <div class="card-body mx-auto">
                               <div class="card-title">
                                   <h3><strong>Pressure</strong></h3>
                               </div>
-                              <!-- <div class="flot-container" style="height:auto">
-                                  <div id="cpu-load" class="cpu-load"></div>
-                              </div> -->
+
                               <canvas class="w-100"  id="mycanvas-color" width="" height="" style="min-height: 150px; min-width:285px"></canvas>
                             </div>
                           </div>
                         </div>
 
-                        <div class="col-md-6 col-lg-4">
+                        <div class="col-md-12 col-lg-4">
                           <div class="card card-border">
                             <div class="card-body">
                               <h3><strong>Level Consumption</strong></h3>
@@ -192,7 +198,7 @@
                           </div>
                         </div>
 
-                        <div class="col-md-6 col-lg-4">
+                        <div class="col-md-12 col-lg-4">
                           <div class="card card-border">
                             <div class="card-body">
                               <h3><strong>Flow Rate</strong></h3>
@@ -202,23 +208,23 @@
                           </div>
                         </div>
 
-                        <div class="col-md-6 col-lg-4">
+                        <div class="col-md-12 col-lg-4">
                           <div class="card card-border">
+                            <h3><strong>Pressure</strong></h3>
                             <div class="card-body mx-auto">
-                              <h3><strong>Pressure II</strong></h3>
                               <!-- <canvas class="w-100" id="mycanvas-single" width="200" height="auto"></canvas> -->
                                <div id="chart_div" class="d-flex justify-content-center"></div>
                             </div>
                           </div>
                         </div>
 
-                        <div class="col-lg-4">
-                            <div class="card">
+                        <div class="col-md-12 col-lg-12">
+                            <div class="card card-border">
                                 <div class="card-title">
-                                    <h4>Real Chart</h4>
+                                    <h3><strong>Flow rate</strong></h3>
                                 </div>
-                                <div class="flot-container">
-                                    <div id="cpu-load" class="cpu-load"></div>
+                                <div class="flot-container" style="height:auto">
+                                    <div id="test-flowrate-data" class="cpu-load"></div>
                                 </div>
                             </div>
                             <!-- /# card -->

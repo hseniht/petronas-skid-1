@@ -78,6 +78,36 @@
 
 	} );
 
+
+	//custom Live chart for tk-db-4
+	var plot = $.plot( "#test-flowrate-data", [ getRandomData() ], {
+		series: {
+			shadowSize: 10 // Drawing is faster without shadows
+		},
+		yaxis: {
+			min: 0,
+			max: 100
+		},
+		xaxis: {
+			show: true
+		},
+		colors: [ "#007BFF" ],
+		grid: {
+			color: "black",
+			hoverable: true,
+			borderWidth: 0,
+			backgroundColor: 'transparent'
+		},
+		tooltip: true,
+		tooltipOpts: {
+			content: "Y: %y",
+			defaultTheme: false
+		}
+
+
+	} );
+	// end of custom Live chart for tk-db-4
+
 	function update() {
 
 		plot.setData( [ getRandomData() ] );
